@@ -1,0 +1,24 @@
+// Enter N: 5
+// A 
+// B C 
+// D E F 
+// G H I J 
+// K L M N O
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    int count=1; 
+    cout<<"Enter N :";
+    cin>>n;
+    for(int row=0;row<n;row++){
+        for(int col=0;col<row+1;col++){
+            cout<<char(count+64)<<" ";
+            count++;
+        }
+        cout<<"\n";
+    }
+    return 0;
+}
