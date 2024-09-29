@@ -1,0 +1,38 @@
+A 
+B B 
+C C C 
+D D D D 
+E E E E E
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n; 
+    int count=1;
+    cout<<"Enter N :";
+    cin>>n;
+    for(int row=0;row<n;row++){
+        for(int col=0;col<row+1;col++){
+            cout<<char(row+1+64)<<" "; 
+               
+        }
+        cout<<"\n";
+    }
+    return 0;
+}
+////////////////////////////////////
+#include<iostream>
+using namespace std;
+int main(){
+    int n; 
+    cout<<"Enter N :";
+    cin>>n;
+    for(int row=1;row<=n;row++){
+        for(int col=1;col<=row;col++){
+            cout<<char(row+64)<<" ";    
+        }
+        cout<<"\n";
+    }
+    return 0;
+}
+
