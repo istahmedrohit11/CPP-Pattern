@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    int count=1; 
+    cout<<"Enter N :";
+    cin>>n;
+    for(int row=1;row<=n;row++){
+        for(int col=1;col<=n;col++){
+            cout<<char(count+64)<<" ";
+            count++;
+        }
+        cout<<"\n";
+    }
+    return 0;
+}
